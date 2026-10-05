@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+      <h1 style="grid-area: name;" class="name">Emily Reed</h1>
+      <p class="contact-info">Austin, TX · (512) 555-0147 · emily.reed@example.com · github.com/emilyreed</p>
+      <nav>
+      <ul style="grid-area: links;">
+        <li class="cover-letter"><a href="cover-letter.html"><p class="list">COVER LETTER</p></a></li>
+        <li class="career-goals"><a href="career-goals.html"><p class="list">CAREER GOALS</p></a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <main>
+      <article>
+        <section style="grid-area: s1;" class="summary">
+          <h1>PROFESSIONAL SUMMARY</h1>
+          <p>Software Engineer with 6+ years of experience building scalable web applications, backend services, and data-intensive systems. <br>Experienced in <span>Python</span>, <span>PostgreSQL</span>, <span>AWS</span>, </span>and modern <span>CI/CD</span> practices.<br>Strong background in designing APIs, improving application performance, and collaborating across engineering and product teams.</p>
+          <hr>
+        </section>
+        <section style="grid-area: s2;">
+          <h2><strong>PROFESSIONAL EXPERIENCE</strong></h2>
+
+          <h3>Senior Software Engineer</h3>
+          <h4><em>Northstar Analytics — Austin, TX | March 2023 - Present</em></h4>
+          <ul>
+            <li>Designed and maintained Python-based backend services supporting more than 2 million monthly requests.</li>
+            <li>Reduced average API response time by 38% by redesigning database queries and introducing Redis caching.</li>
+            <li>Led migration of 14 legacy services to containerized deployments using Docker and Kubernetes.</li>
+            <li>Built automated testing pipelines that increased backend test coverage from 61% to 89%.</li>
+            <li>Mentored four junior engineers through code reviews, architecture discussions, and technical workshops.</li>
+            <li>Collaborated with product and data teams to develop new analytics features used by more than 40 enterprise customers.</li>
+          </ul>
+
+          <h3>Software Engineer</h3>
+          <h4><em>Brightline Technologies — Denver, CO | July 2020 - February 2023</em></h4>
+          <ul>
+            <li>Developed REST and GraphQL APIs using Python, Django, and PostgreSQL.</li>
+            <li>Built React dashboards used by internal operations teams to monitor customer activity.</li>
+            <li>Automated recurring data-processing workflows, reducing manual processing time by approximately 20 hours per week.</li>
+            <li>Implemented CI/CD workflows with GitHub Actions and AWS, reducing deployment time from approximately 30 minutes to under 10 minutes.</li>
+            <li>Investigated production incidents using Datadog logs and metrics and contributed to post-incident remediation plans.</li>
+            <li>Participated in an Agile development team of 10 engineers, designers, and product managers.</li>
+          </ul>
+
+          <h3>Junior Software Developer</h3>
+          <h4><em>Cedar Systems — Phoenix, AZ | June 2018 - June 2020</em></h4>
+          <ul>
+            <li>Developed internal business applications using JavaScript, Node.js, and PostgreSQL.</li>
+            <li>Created automated scripts for data validation and report generation.</li>
+            <li>Assisted senior engineers with API development, debugging, and database optimization.</li>
+            <li>Wrote unit and integration tests using Jest and pytest.</li>
+            <li>Maintained technical documentation for internal applications and deployment procedures.</li>
+          </ul>
+        </section>
+        <section style="grid-area: s3;">
+          <h2><strong>EDUCATION</strong></h2>
+          <h3>Bachelor of Science in Computer Science</h3>
+          <h4><em>Arizona State University — Tempe, AZ | 2018</h4></em>
+          <p>Relevant Coursework: Data Structures & Algorithms, Database Systems, Operating Systems, Computer Networks, Software Engineering</p>
+        </section>
+        <section style="grid-area: s4;">
+          <h2><strong>CERTIFICATIONS</strong></h2>
+          <ul>
+            <li>AWS Certified Developer - Associate</li>
+            <li>Certified Kubernetes Application Developer (CKAD)</li>
+          </ul>
+        </section>
+        <section style="grid-area: s5;">
+          <h2><strong>PROJECTS</strong></h2>
+          <h3>Personal Finance Dashboard</h3>
+          <h4><em>Python · FastAPI · React · PostgreSQL</em></h4>
+          <ul>
+            <li>Developed a full-stack application for tracking income, expenses, and monthly budgets.</li>
+            <li>Implemented authentication, transaction categorization, and interactive financial reports.</li>
+            <li>Containerized the application with Docker and created an automated deployment pipeline.</li>
+          </ul>
+          <h3>Distributed Task Queue</h3>
+          <h4><em>Python · Redis · Docker</em></h4>
+          <ul>
+            <li>Built a lightweight distributed task-processing system capable of assigning asynchronous jobs across multiple worker processes.</li>
+            <li>Implemented retry handling, task prioritization, and basic monitoring.</li>
+          </ul>
+        </section>
+        <section style="grid-area: s6;">
+          <table>
+            <caption><strong>Technical Skills</strong></caption>
+            <tr>
+              <th>Languages:</th>
+              <td>Python</td>
+              <td>TypeScript</td>
+              <td>JavaScript</td>
+              <td>SQL</td>
+              <td>Java</td>
+              <td>Bash</td>
+            </tr>
+            <tr>
+              <th>Frameworks:</th>
+              <td>Django</td>
+              <td>FastAPI</td>
+              <td>React</td>
+              <td>Node.js</td>
+              <td>Express</td>
+            </tr>
+            <tr>
+              <th>Databases:</th>
+              <td>PostgreSQL</td>
+              <td>MySQL</td>
+              <td>Redis</td>
+              <td>MongoDB</td>
+            </tr>
+            <tr>
+              <th>Cloud & DevOps:</th>
+              <td>AWS</td>
+              <td>Docker</td>
+              <td>Kubernetes</td>
+              <td>Terraform</td>
+              <td>GitHub Actions</td>
+            </tr>
+            <tr>
+              <th>Tools:</th>
+              <td>Git</td>
+              <td>Linux</td>
+              <td>Jira</td>
+              <td>Datadog</td>
+              <td>Grafana</td>
+              <td>pytest</td>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </main>
+    
+    <footer></footer>
+  </body>
+</html>
