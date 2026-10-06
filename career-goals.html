@@ -2,53 +2,108 @@
 <html>
   <head>
     <title>Career Goals</title>
-
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   </head>
   <body>
 
     <header>
-      <h1 style="grid-area: name;" class="name">Emily Reed</h1>
-      <p class="contact-info">Austin, TX · (512) 555-0147 · emily.reed@example.com · github.com/emilyreed</p>
-      <nav>
-      <ul style="grid-area: links;">
+      <h1 class="name">Not Halo</h1>
+      <p class="contact-info">Austin, TX · (512) 555-0147 · not.halo@example.com · github.com/nothalo</p>
+    </header>
+    <nav>
+      <ul>
         <li class="cover-letter"><a href="resume.html"><p class="list">RESUME</p></a></li>
         <li class="career-goals"><a href="cover-letter.html"><p class="list">COVER LETTER</p></a></li>
       </ul>
     </nav>
-    </header>
 
     <main>
       <h1>CAREER GOALS</h1>
-      <p>My long-term career goal is to become a highly versatile technology leader who can bridge the gap between innovative engineering and meaningful real-world impact. I want to deepen my expertise in software architecture, artificial intelligence, cloud infrastructure, and distributed systems while continuing to build products that solve complex problems at scale. As I grow, I hope to take on increasingly challenging technical projects, mentor other engineers, and eventually lead teams that turn ambitious ideas into reliable, impactful technology. Ultimately, I want a career defined by continuous learning, technical creativity, and the ability to leave every system, team, and product I work on better than I found it.</p>
 
       <div class="container">
-        <div style="grid-area: pic1;" class="pic1">
+
+        <div style="grid-area: pic;" class="pic">
           <img src="360_F_1595469006_thsB4C3KjvApEFWTViMFIT3p3vBhtxVk.jpg">
         </div>
-        <div style="grid-area: pic2;" class="pic2">
-          <img src="cyberpunk-hacker-anime-girl-with-edgy-haircuy-typing-holographic-keyboard-while-surrounded-by-neon-code-digital-data-manga-style-illustration-generative-ai_850000-9756.avif">
-        </div>
+
         <div style="grid-area: audio;" class="audio">
-          <audio src="C AR A_M4TH.mp3" controls>Minecraft Breakcore Remix</audio>
+          <audio src="C AR A_M4TH.mp3" controls>Minecraft breakcore remix</audio>
         </div>
+
         <div style="grid-area: video;" class="video">
-          <video src="CARA_M4TH - bxnwxghxrn (1080p).mp4" controls>Same Minecraft Breakcore Remix But Video Version</video>
+          <video src="CARA_M4TH - bxnwxghxrn (1080p).mp4" controls>Same minecraft breakcore remix but video version</video>
+        </div>
+      
+        <div style="grid-area: form;">
+          <h1>Contact Me</h1>
+          <form action="https://wp.zybooks.com/form-viewer.php" method="GET">
+            <div>
+              <label for="fname">First name:</label>
+              <input id="fname" type="text" name="first name">
+            </div>
+            <br>
+            <div>
+              <label for="lname">Last name:</label>
+              <input id="lname" type="text" name="last name">
+            </div>
+            <br>
+            <div>
+              <label for="cname">Company name:</label>
+              <input id="cname" type="text" name="company name">
+            </div>
+            <br>
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" name="email" placeholder="johndoe1@gmail.com">
+            </div>
+            <br>
+            <div>
+              <label for="tel">Phone number:</label>
+              <input id="tel" type="tel" name="phone number" placeholder="(123)456-7890">
+            </div>
+            <br>
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+            </div>
+            <br>
+            <div>
+             <label for="time">Best contact time:</label>
+              <br>
+              <label for="a.m.">a.m.</label>
+              <input class="radio" id="a.m." type="radio" name="contact time" value="a.m.">
+
+              <label for="p.m.">p.m.</label>
+              <input class="radio" id="p.m." type="radio" name="contact time" value="p.m.">
+
+              <label for="anytime">anytime</label>
+              <input class="radio" id="anytime" type="radio" name="contact time" value="anytime">
+           </div>
+            <br>
+            <div>
+              <label for="contact">Best contact:</label>
+              <select id="contact" name="contact">
+                <option value="phone">phone</option>
+                <option value="email">email</option>
+                <option value="text">text</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <input id="submit" type="submit">
+            </div>
+          </form>
         </div>
       </div>
-      
-      <form>
-        <label>First Name:</label><br>
-        <input type="text"><br>
-      </form>
     </main>
 
     <footer></footer>

@@ -2,29 +2,29 @@
 <html>
   <head>
     <title>Resume</title>
-
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   </head>
   <body>
 
     <header>
-      <h1 style="grid-area: name;" class="name">Emily Reed</h1>
-      <p class="contact-info">Austin, TX · (512) 555-0147 · emily.reed@example.com · github.com/emilyreed</p>
-      <nav>
-      <ul style="grid-area: links;">
+      <h1 class="name">Not Halo</h1>
+      <p class="contact-info">Austin, TX · (512) 555-0147 · not.halo@example.com · github.com/nothalo</p>
+    </header>
+    <nav>
+      <ul>
         <li class="cover-letter"><a href="cover-letter.html"><p class="list">COVER LETTER</p></a></li>
         <li class="career-goals"><a href="career-goals.html"><p class="list">CAREER GOALS</p></a></li>
       </ul>
     </nav>
-    </header>
 
     <main>
       <article>
@@ -146,6 +146,13 @@
       </article>
     </main>
     
-    <footer></footer>
+    <footer>
+      <p>Today's date is: <span id="date-display"></span></p>
+      <script>
+        const today = new Date();
+        document.getElementById("date-display").textContent = today.toLocaleDateString();
+        console.log("Welcome to my resume!")
+      </script>
+    </footer>
   </body>
 </html>

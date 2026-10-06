@@ -36,21 +36,14 @@ ul {
 
 header {
   display: grid;
-  grid-template-areas:
-    'name'
-    'links';
-
   width: 100%;
-  background-color: black;
-  opacity: 90%;
-  position: sticky;
-  top: 0;
+  background-color: rgb(24, 24, 24);
 }
 
 .name {
   color: rgb(212, 146, 157);
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   font-style: normal;
   font-size: 64px;
   margin: 0;
@@ -65,6 +58,13 @@ header {
   padding: 8px;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  opacity: 95%;
+}
+
 nav ul {
   display: grid;
   grid-auto-flow: column;
@@ -76,7 +76,7 @@ nav ul {
 
 .cover-letter,
 .career-goals {
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(54, 54, 54);
   list-style: none;
 }
 
@@ -106,8 +106,14 @@ footer {
   height: 32px;
   width: 100%;
   background-color: rgb(24, 24, 24);
-  position: fixed;
+  position: sticky;
   bottom: 0;
+  opacity: 96%;
+}
+
+footer p {
+  color: palevioletred;
+  line-height: 32px;
 }
 
 main {
@@ -175,20 +181,56 @@ audio::-webkit-media-controls-panel {
 .container {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-rows: 360px 54px 1080px;
-  justify-content: center;
-  align-items: center;
+  grid-template-rows: 360px 54px 360px;
+  justify-items: center;
+  align-items: start;
   grid-template-areas:
-    'pic1 pic2'
-    'audio audio'
-    'video video';
+    'pic form'
+    'audio form'
+    'video form';
+  overflow: hidden;
 }
 
-.pic2,
-.pic1,
+.video,
 .audio,
-.video {
+.pic {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+}
+
+video,
+img,
+audio {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#message {
+  height: 100px;
+  width: 100%;
+}
+
+form {
+  display: grid;
+  width: 500px;
+}
+
+form div input {
+  width: 100%;
+  border: 1px solid darkgray;
+}
+
+.radio {
+  width: max-content;
+}
+
+#submit {
+  background-color: rgb(212, 146, 157);
+  height: 32px;
+}
+
+.cover-letter-main {
+  height: 78dvh;
 }
